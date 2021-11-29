@@ -37,6 +37,6 @@ with open("./SimpleStorage.sol", "r") as file:
 
     # get abi
 
-    abi = json.loads(
-        compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["metadata"]
-    )["output"]
+    abi = compiled_sol["contracts"]["SimpleStorage.sol"]["SimpleStorage"]["abi"]
+    #
+    print(abi)
